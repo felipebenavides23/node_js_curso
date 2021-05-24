@@ -1,0 +1,15 @@
+libreria para no estar actualizando el servidor 
+Para no tener que andar bajando y subiendo el server se puede instalar una librería que se llama nodemon, la cual detecta cambios en el file system del proyecto y hace el reload del proyecto automáticamente.
+Para instalar nodemon ejecutar
+
+npm i -g nodemon
+Luego de tener instalado nodemon, hay que realizar un cambio en el package.json agregando lo siguiente en el apartado de scripts
+
+    "server":"nodemon server.js",
+Luego para levantar el server en vez de
+
+node server.js
+ejecutamos lo siguiente
+
+npm run server
+Este “server” coincide con la key que hemos agregado en el package.json en el apartado “scripts”
